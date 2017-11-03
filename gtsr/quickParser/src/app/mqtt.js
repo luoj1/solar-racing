@@ -1,4 +1,4 @@
-client = new Paho.MQTT.Client("mqtt.solarracing.me", 8080,'/');
+client = new Paho.MQTT.Client("", 1884,'/');
 // set callback handlers
 client.onConnectionLost = function (responseObject) {
   console.log("Connection Lost: "+responseObject.errorMessage);
@@ -22,7 +22,7 @@ console.log('die');
 client.connect({
 onSuccess: onConnect,
 onFailure: onFailure,
-username : 'sr1',
-password : 'd_%6vqwQ.p#p=eE'
+username : '',
+password : ''
 });
 console.log('start');
